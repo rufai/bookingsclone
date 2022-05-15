@@ -1,0 +1,25 @@
+extend nav
+
+block main
+
+    h2 All The Movies 
+    span We have #{movies.length} #{genre}
+    
+   
+
+    each movie in movies
+        div 
+            h3= movie.title
+            span= movie.year
+            p= movie.plot
+            img(
+                src= movie.posterUrl
+                width= 200
+            )
+            div
+                button  
+                    a(
+                        href= 'https://www.youtube.com/results?search_query=' + movie.title + ' trailer'
+                        target= "_blank"
+                    ) Watch  #{movie.title} Trailer
+            hr

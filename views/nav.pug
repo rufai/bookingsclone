@@ -1,0 +1,29 @@
+extend layout
+block content
+    section  
+        ul   
+            li 
+                a(
+                    href= `http://localhost:3000/movies/` 
+                )  Home
+                
+            each genre in genres 
+                li
+                    a(
+                    href= `http://localhost:3000/movies/search?genre=` + genre
+                    )  #{genre}
+
+            section(id="search_area")
+                form(action="/search")
+                    select
+                        option(value="id") ID
+                        option(value="title") Title 
+                    input(
+                        type= "text"
+                        placeholder= "Search by Id or Title"
+                    )
+                    button(
+                        type="submit"
+                    ) Search
+    
+    block main

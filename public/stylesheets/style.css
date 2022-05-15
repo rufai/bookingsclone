@@ -1,0 +1,62 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+li {
+  float: left;
+  padding: 3px 5px;
+  margin: 3px;
+  background-color: black;
+  border-radius: 3px;
+}
+
+button {
+  background-color: rgb(189, 26, 121);
+  border-style: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+button a {
+  color: antiquewhite;
+}
+
+
+span {
+  padding: 4px;
+  margin-top: 4px;
+  background-color: darkgoldenrod;
+  color: bisque;
+}
+
+#search_area {
+
+  margin: 5%;
+  
+}
+
+input {
+  padding: 2%;
+
+}
+
+select {
+  padding: 2%;
+}
+
+button[type=submit] {
+  padding: 2%;
+  background-color: darkmagenta;
+
+}
