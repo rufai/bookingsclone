@@ -1,0 +1,17 @@
+extend ../layout
+
+block content
+    section  
+        ul   
+            li 
+                a(
+                    href= `http://localhost:3000/hotels/` 
+                )  Home
+
+            each hotel, index in hotels 
+                li
+                    a(
+                    href= `http://localhost:3000/hotels/` + index + '/reviews'
+                    )  #{hotel.Name}
+
+    block main

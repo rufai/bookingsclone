@@ -35,7 +35,7 @@ button a {
 
 span {
   padding: 4px;
-  margin-top: 4px;
+  margin: 2%;
   background-color: darkgoldenrod;
   color: bisque;
 }
@@ -59,4 +59,25 @@ button[type=submit] {
   padding: 2%;
   background-color: darkmagenta;
 
+}
+
+.hotel {
+  padding: 10%;
+}
+
+.hotel p {
+  font-weight: bold;
+  padding: 2%;
+}
+
+.hotel span {
+  background-color: coral;
+}
+
+.review {
+  padding: 5%;
+}
+
+.review p {
+  padding: 2%;
 }

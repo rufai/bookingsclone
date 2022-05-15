@@ -1,0 +1,20 @@
+extend nav 
+
+block main 
+    each hotel, index in hotels
+        section( class="hotel" )    
+            p= hotel.Name
+            span= hotel.Price
+            img(
+                alt= hotel.Name
+                src= hotel.ImgURL
+                width=  400
+            )
+            div
+                button  
+                    a(
+                        href= 'http://localhost:3000/hotels/' + index  + '/reviews'
+                        target= "_blank"
+                    ) See Reviews
+                 
+            

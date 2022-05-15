@@ -1,0 +1,10 @@
+extend nav
+
+block main
+    span This hotel has #{reviews.length} reviews
+    each review in reviews
+        section( class="review" ) 
+            p= review.Title
+            span= review.Author
+            p= review.Content
+
