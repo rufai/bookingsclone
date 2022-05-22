@@ -1,0 +1,2 @@
+SELECT
+    - collect data from a  table

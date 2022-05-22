@@ -7,7 +7,7 @@ var hotelsController = require("../controllers/hotelsController")
 // get all hotels
 router.get("/", hotelsController.index);
 
-// get all hotels reviews
+// get all hotels reviews by the id
 router.get("/:id/reviews", hotelsController.reviews);
 
 module.exports = router;
